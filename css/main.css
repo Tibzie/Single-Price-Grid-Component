@@ -1,5 +1,38 @@
 @import url("https://fonts.googleapis.com/css?family=Karla:400,700&display=swap");
 body {
   font-family: 'Karla', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+.first-section {
+  background-color: #fff;
+}
+
+.first-section h2 {
+  color: #2ab2af;
+}
+
+.first-section p:nth-child(2) {
+  color: #c0df34;
+  font-weight: 700;
+}
+
+.second-section {
+  background-color: #2ab2af;
+}
+
+@media (min-width: 375px) {
+  body {
+    padding: 1.5em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
