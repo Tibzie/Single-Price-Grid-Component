@@ -3,7 +3,6 @@
 body {
     font-family: 'Karla', sans-serif;
     box-sizing: border-box;
-    font-size: 16px;
     padding: 0;
     margin: 0;
 }
@@ -14,17 +13,61 @@ h2, p {
 }
 .first-section {
     background-color: #fff;
+    color: hsl(218, 22%, 67%);
     h2 {
         color: hsl(179, 62%, 43%);
+        // font-size: 0.9em;
     }
-    p:nth-child(2) {
-        color: hsl(71, 73%, 54%);
-        font-weight: 700;
+    p {
+        &:nth-child(2) {
+            color: hsl(71, 73%, 54%);
+            font-weight: 700;
+            margin-top: 25px;
+        }
+        &:nth-child(3) {
+            margin-top: 25px;
+            line-height: 1.75em;
+            margin-bottom: 30px;
+        }
     }
 }
 
 .second-section {
     background-color: hsl(179, 62%, 43%);
+    color: hsl(204, 43%, 93%);
+    h2 {
+        
+        // font-size: 0.9em;
+    }
+
+    .button {
+        border: 5px solid hsl(71, 73%, 54%);
+        border-radius: 5px;
+        background: hsl(71, 73%, 54%);
+        color: hsl(204, 43%, 93%);
+        font-weight: 700;
+        width: 100%;
+        padding: 10px 0;
+        margin-top: 25px;
+        font-size: 1em;
+    }
+    p {
+        &:nth-child(2) {
+            margin-top: 25px;
+        }
+        &:nth-child(3) {
+            margin-top: 10px;
+        }
+        .price {
+            font-weight: 700;
+        }
+        .month {
+            
+            margin-left: 20px;
+            font-weight: 300;
+        }
+    }
+
 }
 
 .third-section {
@@ -32,12 +75,15 @@ h2, p {
 }
 
 @media (min-width: 375px) {
-    body {
-        // padding: 30px;
-        padding: 1.5em;
-        .first-section {
+    .first-section, .second-section, .third-section {
+        padding: 30px;
+    }
+    .second-section {
+        .price {
+            font-size: 2em;
         }
     }
+
 }
 
 @media (min-width: 1440px) {

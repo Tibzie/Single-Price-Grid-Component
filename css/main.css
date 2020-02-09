@@ -3,7 +3,6 @@ body {
   font-family: 'Karla', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 16px;
   padding: 0;
   margin: 0;
 }
@@ -15,6 +14,7 @@ h2, p {
 
 .first-section {
   background-color: #fff;
+  color: #98a6bd;
 }
 
 .first-section h2 {
@@ -24,15 +24,55 @@ h2, p {
 .first-section p:nth-child(2) {
   color: #c0df34;
   font-weight: 700;
+  margin-top: 25px;
+}
+
+.first-section p:nth-child(3) {
+  margin-top: 25px;
+  line-height: 1.75em;
+  margin-bottom: 30px;
 }
 
 .second-section {
   background-color: #2ab2af;
+  color: #e5eff5;
+}
+
+.second-section .button {
+  border: 5px solid #c0df34;
+  border-radius: 5px;
+  background: #c0df34;
+  color: #e5eff5;
+  font-weight: 700;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 25px;
+  font-size: 1em;
+}
+
+.second-section p:nth-child(2) {
+  margin-top: 25px;
+}
+
+.second-section p:nth-child(3) {
+  margin-top: 10px;
+}
+
+.second-section p .price {
+  font-weight: 700;
+}
+
+.second-section p .month {
+  margin-left: 20px;
+  font-weight: 300;
 }
 
 @media (min-width: 375px) {
-  body {
-    padding: 1.5em;
+  .first-section, .second-section, .third-section {
+    padding: 30px;
+  }
+  .second-section .price {
+    font-size: 2em;
   }
 }
 /*# sourceMappingURL=main.css.map */
