@@ -56,6 +56,7 @@ h2, p {
     p {
         &:nth-child(2) {
             margin-top: 25px;
+            position: relative;
         }
         &:nth-child(3) {
             margin-top: 10px;
@@ -72,7 +73,13 @@ h2, p {
 }
 
 .third-section {
-
+    background-color:hsla(179, 62%, 43%, 0.8);
+    color: hsl(204, 43%, 93%);
+    ul {
+        padding: 0;
+        list-style-type: none;
+        line-height: 25px;
+    }
 }
 
 @media (min-width: 375px) {
@@ -84,10 +91,8 @@ h2, p {
             font-size: 2em;
         }
         .month {
-            // need more work - vertical align center 
-            position: relative;
-            top: -5px;
-            // transform: translateY(-5%);
+            position: absolute;
+            transform: translateY(50%);
         }
     }
 

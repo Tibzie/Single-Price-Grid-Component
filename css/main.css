@@ -54,6 +54,7 @@ h2, p {
 
 .second-section p:nth-child(2) {
   margin-top: 25px;
+  position: relative;
 }
 
 .second-section p:nth-child(3) {
@@ -69,6 +70,17 @@ h2, p {
   font-weight: 300;
 }
 
+.third-section {
+  background-color: rgba(42, 178, 175, 0.8);
+  color: #e5eff5;
+}
+
+.third-section ul {
+  padding: 0;
+  list-style-type: none;
+  line-height: 25px;
+}
+
 @media (min-width: 375px) {
   .first-section, .second-section, .third-section {
     padding: 30px;
@@ -77,8 +89,9 @@ h2, p {
     font-size: 2em;
   }
   .second-section .month {
-    position: relative;
-    top: -5px;
+    position: absolute;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
   }
 }
 /*# sourceMappingURL=main.css.map */
